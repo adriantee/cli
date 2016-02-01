@@ -1,0 +1,64 @@
+# Settings
+Install npm
+
+# Install yeoman
+npm install -g yo
+
+# Start scaffolding
+yo angular
+
+# Install grunt cli
+npm install -g grunt-cli
+
+# Install grunt
+npm install grunt -g
+
+(some version you need to do this)
+npm install grunt --save-dev
+
+# Install karma if failed previously (or just uncomment karma test in your Gruntfile.js)
+npm install grunt-karma karma karma-phantomjs-launcher karma-jasmine jasmine-core phantomjs phantomjs-prebuilt --save-dev
+
+# Install cli for karma
+npm install -g karma-cli
+
+karma init
+
+Generate bower components (angular,bootstrap,etc)
+bower install
+
+wiredep
+inject bower components into your project
+
+# Build & run
+grunt build
+grunt serve
+
+# Other nice stuff
+bower install gsap --save
+
+# Search for packages
+bower search xx
+
+
+
+
+
+
+# FAQ
+## When doing 'grunt', Fatal error: Unable to find local grunt.
+npm install - Install dependencies
+
+Error: Cannot find module 'karma'
+url:https://github.com/yeoman/generator-angular/issues/1239
+
+Edit the dependency in /usr/local/lib/node_modules/yo/package.json to be "yeoman-environment": "1.4.0"
+cd /usr/local/lib/node_modules/yo
+rm -rf node_modules (run from the yo directory)
+npm install (run from the yo directory)
+
+
+
+
+
+npm install bower??
