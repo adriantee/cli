@@ -40,9 +40,9 @@ bower install gsap --save
 # Search for packages
 bower search xx
 
-
-
-
+# uncss, remove unneeded css 
+npm install grunt-uncss
+uncss http://url > mini.css
 
 
 # FAQ
