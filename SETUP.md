@@ -9,9 +9,7 @@ AWS Linux AMI
 1. Setup:
 
 		sudo yum -y update
-		sudo yum install httpd
-		sudo yum install php
-		sudo yum install mysql-server
+		sudo yum install httpd php mysql-server
 
 2. Auto start httpd service:
 
