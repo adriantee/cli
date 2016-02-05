@@ -16,6 +16,11 @@ adsutil.vbs GET w3svc/Filters/Compression/Deflate/HcFileExtensions
 
 adsutil.vbs GET w3svc/Filters/Compression/gzip/HcFileExtensions
 
+Restart IIS gracefully:
+
+iisreset /noforce
+
+
 Restart w3svc after making the above changes:
 
 net stop w3svc
