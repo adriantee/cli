@@ -346,21 +346,3 @@ Remember that after editing the file you should save it like this:
 sudo /etc/init.d/iptables save
 
 
-
-Set IIS gzip and deflate
-
-cd C:\Inetpub\AdminScripts\
-
-cscript adsutil.vbs SET W3SVC/Filters/Compression/Deflate/HcFileExtensions "htm html txt css js"
-
-cscript adsutil.vbs SET W3SVC/Filters/Compression/gzip/HcFileExtensions "htm html txt css js"
-
-separate items:
-
-adsutil.vbs SET w3svc/Filters/Compression/Deflate/HcFileExtensions "htm" "html" "txt" "css" "js"
-
-adsutil.vbs SET w3svc/Filters/Compression/gzip/HcFileExtensions "htm" "html" "txt" "css" "js"
-
-adsutil.vbs GET w3svc/Filters/Compression/Deflate/HcFileExtensions
-
-adsutil.vbs GET w3svc/Filters/Compression/gzip/HcFileExtensions
