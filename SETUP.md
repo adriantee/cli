@@ -355,3 +355,12 @@ cscript adsutil.vbs SET W3SVC/Filters/Compression/Deflate/HcFileExtensions "htm 
 
 cscript adsutil.vbs SET W3SVC/Filters/Compression/gzip/HcFileExtensions "htm html txt css js"
 
+separate items:
+
+adsutil.vbs SET w3svc/Filters/Compression/Deflate/HcFileExtensions "htm" "html" "txt" "css" "js"
+
+adsutil.vbs SET w3svc/Filters/Compression/gzip/HcFileExtensions "htm" "html" "txt" "css" "js"
+
+adsutil.vbs GET w3svc/Filters/Compression/Deflate/HcFileExtensions
+
+adsutil.vbs GET w3svc/Filters/Compression/gzip/HcFileExtensions
