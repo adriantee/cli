@@ -41,7 +41,7 @@ AWS Linux AMI
 		sudo ln -s /usr/share/phpMyAdmin /var/www/html/pma
 		sudo yum install libmcrypt libmcrypt-devel php-mcrypt php-mbstring
 
-		mysqladmin -u root password 'thisisalongpassword'
+		mysqladmin -u root password thisisalongpassword
 
 6. Secure phpmyadmin
 
