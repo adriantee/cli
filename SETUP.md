@@ -344,3 +344,14 @@ sudo iptables -I INPUT 4 -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
 Remember that after editing the file you should save it like this:
 
 sudo /etc/init.d/iptables save
+
+
+
+Set IIS gzip and deflate
+
+cd C:\Inetpub\AdminScripts\
+
+cscript adsutil.vbs SET W3SVC/Filters/Compression/Deflate/HcFileExtensions "htm html txt css js"
+
+cscript adsutil.vbs SET W3SVC/Filters/Compression/gzip/HcFileExtensions "htm html txt css js"
+
